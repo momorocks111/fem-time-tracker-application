@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Time tracking dashboard</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <main class="main">
+      <section class="section__info">
+        <div class="container">
+          <div class="profile__container">
+            <div class="profile__info">
+              <div class="profile__img-container">
+                <img
+                  src="images/image-jeremy.png"
+                  alt="face"
+                  class="profile__img"
+                />
+              </div>
+              <div class="profile__information">
+                <p class="profile__report">Report for</p>
+                <h3 class="profile__name">Jeremy Robson</h3>
+              </div>
+            </div>
+            <nav class="nav__buttons" id="nav-btns">
+              <ul class="nav__list">
+                <li class="nav__item">
+                  <button class="nav__btn" id="first-btn">Daily</button>
+                </li>
+                <li class="nav__item">
+                  <button class="nav__btn active-link" id="second-btn">
+                    Weekly
+                  </button>
+                </li>
+                <li class="nav__item">
+                  <button class="nav__btn" id="third-btn">Monthly</button>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <div class="cards__container">
+            <!--  1/6 -->
+            <article
+              class="data__card"
+              style="background-color: var(--Light-red-work)"
+            >
+              <div class="article__img-container">
+                <img
+                  src="images/icon-work.svg"
+                  alt="info"
+                  class="article__img"
+                />
+              </div>
+              <div class="card__content">
+                <div class="card__header">
+                  <p class="card__title">Work</p>
+                  <img
+                    src="images/icon-ellipsis.svg"
+                    alt="..."
+                    class="ellipsis__img"
+                  />
+                </div>
+                <div class="card__numbers">
+                  <h1 class="card__hours" id="work-hours">32hrs</h1>
+                  <p class="card__last" id="work-last">Last Week - 36hrs</p>
+                </div>
+              </div>
+            </article>
+
+            <!--  2/6 -->
+            <article
+              class="data__card"
+              style="background-color: var(--Soft-blue-play)"
+            >
+              <div class="article__img-container">
+                <img
+                  src="images/icon-play.svg"
+                  alt="info"
+                  class="article__img"
+                />
+              </div>
+              <div class="card__content">
+                <div class="card__header">
+                  <p class="card__title">Play</p>
+                  <img
+                    src="images/icon-ellipsis.svg"
+                    alt="..."
+                    class="ellipsis__img"
+                  />
+                </div>
+                <div class="card__numbers">
+                  <h1 class="card__hours" id="play-hours">10hrs</h1>
+                  <p class="card__last" id="play-last">Last Week - 8hrs</p>
+                </div>
+              </div>
+            </article>
+
+            <!--  3/6 -->
+            <article
+              class="data__card"
+              style="background-color: var(--Light-red-study)"
+            >
+              <div class="article__img-container">
+                <img
+                  src="images/icon-study.svg"
+                  alt="info"
+                  class="article__img"
+                />
+              </div>
+              <div class="card__content">
+                <div class="card__header">
+                  <p class="card__title">Study</p>
+                  <img
+                    src="images/icon-ellipsis.svg"
+                    alt="..."
+                    class="ellipsis__img"
+                  />
+                </div>
+                <div class="card__numbers">
+                  <h1 class="card__hours" id="study-hours">4hrs</h1>
+                  <p class="card__last" id="study-last">Last Week - 7hrs</p>
+                </div>
+              </div>
+            </article>
+
+            <!--  4/6 -->
+            <article
+              class="data__card"
+              style="background-color: var(--Lime-green-exercise)"
+            >
+              <div class="article__img-container">
+                <img
+                  src="images/icon-exercise.svg"
+                  alt="info"
+                  class="article__img"
+                />
+              </div>
+              <div class="card__content">
+                <div class="card__header">
+                  <p class="card__title">Exercise</p>
+                  <img
+                    src="images/icon-ellipsis.svg"
+                    alt="..."
+                    class="ellipsis__img"
+                  />
+                </div>
+                <div class="card__numbers">
+                  <h1 class="card__hours" id="exercise-hours">4hrs</h1>
+                  <p class="card__last" id="exercise-last">Last Week - 5hrs</p>
+                </div>
+              </div>
+            </article>
+
+            <!--  5/6 -->
+            <article
+              class="data__card"
+              style="background-color: var(--Violet-social)"
+            >
+              <div class="article__img-container">
+                <img
+                  src="images/icon-social.svg"
+                  alt="info"
+                  class="article__img"
+                />
+              </div>
+              <div class="card__content">
+                <div class="card__header">
+                  <p class="card__title">Social</p>
+                  <img
+                    src="images/icon-ellipsis.svg"
+                    alt="..."
+                    class="ellipsis__img"
+                  />
+                </div>
+                <div class="card__numbers">
+                  <h1 class="card__hours" id="social-hours">5hrs</h1>
+                  <p class="card__last" id="social-last">Last Week - 10hrs</p>
+                </div>
+              </div>
+            </article>
+
+            <!--  6/6 -->
+            <article
+              class="data__card"
+              style="background-color: var(--Soft-orange-self-car-)"
+            >
+              <div class="article__img-container">
+                <img
+                  src="images/icon-self-care.svg"
+                  alt="info"
+                  class="article__img"
+                />
+              </div>
+              <div class="card__content">
+                <div class="card__header">
+                  <p class="card__title">Self Care</p>
+                  <img
+                    src="images/icon-ellipsis.svg"
+                    alt="..."
+                    class="ellipsis__img"
+                  />
+                </div>
+                <div class="card__numbers">
+                  <h1 class="card__hours" id="self-hours">2hrs</h1>
+                  <p class="card__last" id="self-last">Last Week - 2hrs</p>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+    <div
+      class="attribution"
+      style="position: absolute; bottom: 0; color: white"
+    >
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">momorocks111</a>.
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
